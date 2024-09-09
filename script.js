@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 图片数组
     const images = [
-        'https://tc.fffo.top/i/2024/09/06/vh17ze.jpg',
-        'https://tc.fffo.top/i/2024/09/08/118hnrj.jpg',
-        'https://tc.fffo.top/i/2024/09/08/119ouux.png'
+        'default-image1.jpg', 
+        'default-image2.jpg', 
+        'default-image3.png' 
     ];
 
     let currentImageIndex = 0;
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setBackgroundImage();
 
-    // 设置“在一起”的起始日期为2023年5月27日
+    // 设置“在一起”的起始日期为默认日期
     const startDate = new Date('2023-05-27T00:00:00Z'); // 使用UTC时间
 
     // 更新“在一起”天数的函数
@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
     playButton.addEventListener('click', function() {
         if (backgroundMusic.paused) {
             backgroundMusic.play();
-            playButton.textContent = '音乐播放中';
+            playButton.textContent = 'Music Playing';
         } else {
             backgroundMusic.pause();
-            playButton.textContent = '播放音乐';
+            playButton.textContent = 'Play Music';
         }
     });
 

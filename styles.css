@@ -1,0 +1,63 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#backgroundImage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    z-index: 1;
+    cursor: pointer; /* 显示可点击的光标 */
+    opacity: 0; /* 初始透明度为0 */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+    pointer-events: none; /* 忽略内容的点击事件 */
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+#playButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+    z-index: 4; /* 确保按钮在最上面 */
+    pointer-events: auto; /* 确保按钮可以点击 */
+}
+
+#particleCanvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2; /* 粒子画布在背景图片之上 */
+    pointer-events: none; /* 忽略粒子画布的点击事件 */
+}

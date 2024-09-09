@@ -8,4 +8,6 @@
 放上来希望可以激励到自己，也是记录自己瞎折腾的过程。
 
 预览图
-![image](https://github.com/user-attachments/assets/c5ea7457-fa16-492e-aa77-b90a274abdea)
+
+
+[图片]
